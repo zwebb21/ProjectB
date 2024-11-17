@@ -1,0 +1,329 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- Tailwind CSS -->
+    
+    <link rel="stylesheet" href="./output.css">
+
+
+<style>
+
+  /* Add hover effect for the divs */
+  #main-content .hover-effect {
+    transition: transform 0.3s ease-in-out;
+  }
+
+  #main-content .hover-effect:hover {
+    transform: translateY(-10px);
+  }
+
+
+
+
+  /* Marquee Animation */
+  .animate-marquee {
+    display: inline-block;
+    animation: marquee 15s linear infinite;
+  }
+
+  @keyframes marquee {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+
+
+  body {
+
+    font-family: 'Inter', sans-serif;
+    line-height: 1.8;
+    color: #333; /* Ensure sufficient contrast */
+}
+
+.text-white {
+    color: #f9f9f9;
+}
+
+
+
+
+  html {
+    scroll-behavior: smooth;
+  }
+  .nav li.active {
+    background-color: #4A5568; /* Change color for active item */
+    color: white;
+  }
+
+
+</style>
+
+
+
+  </head>
+  <body>
+    <!-- Navigation -->
+    <div class="nav sticky top-0 w-full bg-slate-300 p-5">
+      <ul class="flex cursor-pointer flex-col gap-2 text-center text-2xl font-medium sm:flex-row sm:justify-around sm:gap-0">
+        <li class="rounded px-4 py-2 hover:bg-gray-600 hover:text-white">Home</li>
+        <li class="rounded px-4 py-2 hover:bg-gray-600 hover:text-white" ">  <a href="about.html">About</a>  </li>
+        <li class="rounded px-4 py-2 hover:bg-gray-600 hover:text-white">Investors</li>
+        <li class="rounded px-4 py-2 hover:bg-gray-600 hover:text-white">Products</li>
+        <li class="rounded px-4 py-2 hover:bg-gray-600 hover:text-white">FAQ</li>
+      </ul>
+    </div>
+
+    <!-- End of Navigation -->
+<!-- moving banner title here -->
+    
+
+<div class="w-full bg-black py-2 overflow-hidden">
+  <div class="whitespace-nowrap animate-marquee">
+    <p class="text-white text-lg md:text-2xl font-semibold">
+      Important News: Webb Energy Corp announces major developments in our oil rigs. Significant advancements in drilling efficiency and production have been achieved. Stay tuned for more updates!
+    </p>
+  </div>
+</div>
+
+
+
+<!-- end of moving banner title.  -->
+<!-- Hero Section -->
+    <section id="hero" class="text-center p-5">
+      <div class="m-20 flex flex-col text-center md:flex-row md:gap-8" id="product-row">
+        <div class="m-1 w-full md:w-1/3">
+          <h2 class="text-base text-red-500 sm:text-4xl md:text-5xl">Webb Energy</h2>
+        <!-- webb enrgy icion will go here 
+         
+        
+        
+        -->
+        </div>
+
+        <div class="m-4 w-full md:w-2/3">
+          <h2 class="text-3xl text-red-500 sm:text-4xl md:text-5xl">Our Mission</h2>
+          <p class="text-lg sm:text-2xl md:text-3xl mt-7">
+         With the future of the planet and generations to come. 
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- New Section 1: About Zarius Webb and the Company -->
+    <section class="text-center p-5">
+      <div class="flex flex-col md:flex-row md:gap-8">
+        <!-- Left Column (Image) -->
+        <div class="m-4 w-full md:w-1/3">
+          <img class="rounded-lg" src="/img/riga.jpg" alt="CEO Image" />
+        </div>
+
+        <!-- Middle Column (Content and Heading) -->
+        <div class="m-4 w-full md:w-1/3">
+          <h2 class="text-xl font-bold sm:text-2xl md:text-3xl text-red-500">Data & Visuals</h2>
+          
+          <!-- Icon Section -->
+          <div class="flex items-center justify-around space-x-4 mt-4 ">
+            <div class="text-4xl text-gray-600 hover:text-red-500 transition duration-300 ease-in-out transform hover:scale-110">
+              <i class="fas fa-chart-line"></i> <!-- Trend Icon -->
+            </div>
+            <div class="text-4xl text-gray-600 hover:text-red-500 transition duration-300 ease-in-out transform hover:scale-110">
+              <i class="fas fa-database"></i> <!-- Database Icon -->
+            </div>
+            <div class="text-4xl text-gray-600 hover:text-red-500 transition duration-300 ease-in-out transform hover:scale-110">
+              <i class="fas fa-cogs"></i> <!-- Tools Icon -->
+            </div>
+          </div>
+          
+          <!-- Text Content -->
+          <p class="text-sm sm:text-lg p-5 md:text-xl mt-5">
+            At Webb Energy Corp., data-driven insights play a pivotal role in guiding our strategic decisions. Our visual representations of operational data, production statistics, and market trends provide clarity and empower our team to optimize performance and forecast future opportunities.
+          </p>
+          <p class="mt-5 text-sm sm:text-lg p-5 md:text-xl">
+            We utilize advanced tools to present real-time data in a visually compelling way, helping us stay ahead in the rapidly changing oil, gas, and lithium markets. This ensures that our decisions are not only informed but are backed by actionable visual analytics.
+          </p>
+          <p class="text-sm mt-7 p-3 sm:text-lg md:text-xl">
+            By leveraging robust visual dashboards, we present key performance indicators, exploration data, and production trends in a clear, easy-to-understand format. These insights drive our operational efficiency and allow us to continuously refine our strategies to deliver long-term value.
+          </p>
+        </div>
+        
+
+        <!-- Right Column (CEO info + Image) -->
+        <div class="m-4 w-full md:w-1/3">
+          <h2 class="text-xl font-bold sm:text-2xl md:text-3xl">CEO: Zarius Webb</h2>
+          <p class="text-sm sm:text-lg md:text-xl">
+            Zarius Webb is a visionary leader in the oil and gas industry. As CEO of Webb Energy Corp., he has led the company to significant growth and success. With over 25 years of experience in the industry, Zarius is committed to sustainable practices and pushing the boundaries of energy production.
+          </p>
+          <img class="rounded-lg mt-4" src="https://renown-electric.com/wp-content/uploads/AdobeStock_139899101.jpeg" alt="CEO Image" />
+        </div>
+      </div>
+    </section>
+
+
+
+<!-- Main Content (Tiers) -->
+<!-- Main Content (Tiers) -->
+<section id="main-content" class="p-5 text-center">
+  <div class="flex flex-col gap-6 md:flex-row md:gap-8">
+    <!-- Column 1 (Tier One) -->
+    <div class="hover-effect w-full bg-slate-100 p-4 md:w-1/3 rounded">
+      <h2 class="text-xl font-bold sm:text-2xl">Webb Energy Corp. Overview</h2>
+      <p class="text-sm sm:text-lg mt-2 p-3">
+        Webb Energy Corp. is a leading energy company based in Texas, specializing in crude oil, natural gas, and lithium production. Founded on a strong commitment to sustainable energy, we focus on the exploration, production, and distribution of these valuable resources to fuel economic growth and meet the world's increasing demand for energy.
+      </p>
+    </div>
+
+    <!-- Column 2 (Tier Two) -->
+    <div class="hover-effect w-full bg-slate-200 p-4 md:w-1/3 rounded">
+      <h2 class="text-xl font-bold sm:text-2xl">Crude Oil Production</h2>
+      <p class="text-sm sm:text-lg mt-2 p-3">
+        Crude oil makes up the majority of Webb Energy's business, accounting for 75% of our production. We operate multiple oil fields in Texas and are continuously expanding our infrastructure to meet the growing demand for this critical energy resource. Our operations are powered by advanced technology, ensuring efficient and safe extraction processes.
+      </p>
+    </div>
+
+    <!-- Column 3 (Tier Three) -->
+    <div class="hover-effect w-full bg-slate-300 p-4 md:w-1/3 rounded">
+      <h2 class="text-xl font-bold sm:text-2xl">Natural Gas and Lithium</h2>
+      <p class="text-sm sm:text-lg mt-6 p-3">
+        Natural gas is an essential part of our energy portfolio, contributing to 20% of Webb Energy's overall production. We are committed to harnessing its clean-burning potential to meet energy demands while reducing environmental impact. Additionally, Webb Energy has ventured into the lithium market, accounting for 5% of our business, as the world increasingly turns to lithium for batteries and renewable energy solutions.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!--picture carousel  -->
+
+<!-- Carousel Section -->
+<section class="w-full bg-slate-100 py-10">
+  <div class="container mx-auto text-center">
+    <div class="relative overflow-hidden">
+      <!-- Carousel Images -->
+      <div id="carousel" class="flex transition-transform duration-500 ease-in-out">
+        <img
+          src="https://plus.unsplash.com/premium_photo-1682148236159-fcc688022ac7?q=80&w=2636&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt="Image 1"
+          class="rounded w-full h-auto object-cover lg:w-screen"
+        />
+        <img
+          src="https://images.unsplash.com/photo-1696059928249-f036c4d54338?q=80&w=2695&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt="Image 2"
+          class=" rounded   w-full h-auto object-cover lg:w-screen"
+        />
+        <img
+          src="https://images.unsplash.com/photo-1634231573465-9b56e304336e?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt="Image 3"
+          class="w-full h-auto object-cover lg:w-screen rounded"
+        />
+      </div>
+
+      <!-- Navigation Buttons -->
+      <button
+        id="prevBtn"
+        class="absolute top-1/2 left-2 transform -translate-y-1/2 bg-gray-800 text-white px-4 py-2 rounded-full hover:bg-gray-600"
+      >
+        &#8592;
+      </button>
+      <button
+        id="nextBtn"
+        class="absolute top-1/2 right-2 transform -translate-y-1/2 bg-gray-800 text-white px-4 py-2 rounded-full hover:bg-gray-600"
+      >
+        &#8594;
+      </button>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+    <!-- New Section 2: About the Company -->
+    <section id="company-overview" class="text-center p-5">
+      <div class="flex flex-col md:flex-row md:gap-8">
+        <!-- Left Column -->
+        <div class="  bg-slate-200 m-4 w-full md:w-1/2 p-4 rounded-lg">
+          <h2 class="  text-xl font-bold sm:text-2xl md:text-3xl">Company Overview</h2>
+          <p class="text-sm sm:text-lg md:text-xl p-5">
+            Our oil and gas company was founded in 2006 in Texas. Since then, we've expanded our operations across North America, focusing on environmentally responsible energy production. With a robust portfolio of assets, we provide reliable energy to thousands of customers.
+          </p>
+        </div>
+
+        <!-- Right Column -->
+        <div class="   bg-slate-300  m-4 w-full md:w-1/2 rounded p-4">
+          <h2 class="   text-xl font-bold sm:text-2xl md:text-3xl">Mission & Values</h2>
+          <p class="text-sm sm:text-lg md:text-xl p-4">
+            We strive to meet the world’s growing energy needs while ensuring environmental stewardship and corporate responsibility. We are committed to innovation, safety, and the well-being of the communities we serve.
+          </p>
+        </div>
+      </div>
+
+
+
+
+      
+    </section>
+
+
+
+    
+
+    <!-- Footer Section -->
+    <footer class="bg-gray-800 text-white p-5">
+      <div class="flex flex-col md:flex-row md:justify-between">
+        <!-- Left Section (Social Media Icons) -->
+        <div class="flex gap-4">
+          <a href="#" class="text-white hover:text-gray-400">
+            <img src="https://via.placeholder.com/40" alt="Facebook" />
+          </a>
+          <a href="#" class="text-white hover:text-gray-400">
+            <img src="https://via.placeholder.com/40" alt="Twitter" />
+          </a>
+          <a href="#" class="text-white hover:text-gray-400">
+            <img src="https://via.placeholder.com/40" alt="LinkedIn" />
+          </a>
+          <a href="#" class="text-white hover:text-gray-400">
+            <img src="https://via.placeholder.com/40" alt="Instagram" />
+          </a>
+        </div>
+
+        <!-- Middle Section (Directories) -->
+        <div class="flex gap-4 text-center">
+          <ul>
+            <li><a href="#" class="hover:text-gray-400">Home</a></li>
+            <li><a href="#" class="hover:text-gray-400">About Us</a></li>
+            <li><a href="#" class="hover:text-gray-400">Investors</a></li>
+            <li><a href="#" class="hover:text-gray-400">Products</a></li>
+            <li><a href="#" class="hover:text-gray-400">FAQ</a></li>
+          </ul>
+        </div>
+
+        <!-- Right Section (Contact Information) -->
+        <div class="text-center">
+          <h3 class="font-bold">Contact Us</h3>
+          <p>Email: info@webbenergy.com</p>
+          <p>Phone: +1 (800) 555-1234</p>
+        </div>
+      </div>
+    </footer>
+
+<script src="/src/slider.js"></script>
+
+
+<script src="../path/to/flowbite/dist/flowbite.min.js"></script>
+
+  </body>
+</html>
